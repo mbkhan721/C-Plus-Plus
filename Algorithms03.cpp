@@ -63,7 +63,7 @@ int main() {
 	cout << "The lowercase version is: " << z << endl;
 	*/
 
-	
+	/*
 	// lower to upper ------------------ single line solution 
 	char y;
 	cout << "Enter a lowercase letter: ";
@@ -71,6 +71,41 @@ int main() {
 	cout << endl;
 	y = static_cast<char>(static_cast<int>(y) - ('b' - 'B'));
 	cout << "The uppercase equivalent is: " << y << endl;
+	*/
+
+	/*
+	// ALGORITHMS PROBLEM 2
+	char g;
+	cout << "Input a lowercase character: ";
+	cin >> g;
+	cout << endl;
+	int i = static_cast<int>(g); // converting char into int
+
+	cout << i << endl << endl;   // printing out ascii value of lowercase letter
+
+	i -= 32;                     // substracting 32 to get ascii of uppercase letter
+
+	cout << i << endl << endl;   // printing out ascii value of uppercase letter
+
+	g = static_cast<char>(i);    // converting int back into char
+
+	cout << g << endl << endl;   // printing out capital letter
+
+	cout << "The uppercase equivalent is: " << g << endl;
+	*/
+
+	
+	// ALGORITMS PROBLEM 3
+	char k;
+	cout << "Input a lowercase character: ";
+	cin >> k;
+	cout << endl;
+	k = static_cast<char>(static_cast<int>(k) - ('a' - 'A'));
+	cout << "The uppercase equivalent is '" << k << "'" << endl;
+
+
+	// ALGORITHMS PROBLEM 4
+
 
 	return 0;
 }
