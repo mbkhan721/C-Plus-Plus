@@ -139,14 +139,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Algorithms03.cpp" />
-    <ClCompile Include="ExpressionsAlgorithms.cpp" />
+    <ClCompile Include="VarAlg03.cpp" />
+    <ClCompile Include="ExpressionsAlg04.cpp" />
     <ClCompile Include="IntroductionHW.cpp" />
     <ClCompile Include="IntroductionTextExample.cpp" />
     <ClCompile Include="myCode.cpp" />
-    <ClCompile Include="StringsHw.cpp" />
+    <ClCompile Include="StringsHw02.cpp" />
     <ClCompile Include="StringsTextExamples.cpp" />
-    <ClCompile Include="VariablesPractice.cpp" />
+    <ClCompile Include="VarHW03.cpp" />
+    <ClCompile Include="VarPrac03.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

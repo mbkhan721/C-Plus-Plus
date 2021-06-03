@@ -21,7 +21,7 @@
     <ClCompile Include="IntroductionHW.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="StringsHw.cpp">
+    <ClCompile Include="StringsHw02.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="IntroductionTextExample.cpp">
@@ -30,13 +30,16 @@
     <ClCompile Include="StringsTextExamples.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="VariablesPractice.cpp">
+    <ClCompile Include="VarPrac03.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Algorithms03.cpp">
+    <ClCompile Include="VarAlg03.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ExpressionsAlgorithms.cpp">
+    <ClCompile Include="ExpressionsAlg04.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VarHW03.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
