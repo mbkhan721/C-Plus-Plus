@@ -2,9 +2,9 @@
 #include<cmath>
 using namespace std;
 
-int main() {
+int alg3() {
 
-	
+	/*
 	char c;
 	cout << "Enter a lowercase letter: ";
 	cin >> c;
@@ -148,7 +148,7 @@ int main() {
 	s = abs(s);
 	cout << "b absolute value: " << s << endl;
 	
-	
+	*/
 
 	return 0;
 }

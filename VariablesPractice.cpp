@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-int vp() {
+int main() {
 	
 	// 1.
 	string name;
@@ -34,7 +34,7 @@ int vp() {
 		<< endl
 		<< endl;
 	
-
+	
 	// 2.
 	double length;
 	double width;
@@ -55,8 +55,9 @@ int vp() {
 	// 4.
 	double d = 5.3;
 	bool b = 0;
-	//int x = b = (5 + 1) + d;
+	int x = b = (5 + 1) + d;
 	cout << x << endl;
-
+	
 	return 0;
+	
 }
