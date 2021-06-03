@@ -1,8 +1,8 @@
 #include<iostream>
 using namespace std;
 
-int main() {
-	
+int varPrac() {
+	/*
 	// 1.
 	string name;
 	string middleI;
@@ -58,6 +58,6 @@ int main() {
 	int x = b = (5 + 1) + d;
 	cout << x << endl;
 	
-	return 0;
-	
+	*/
+	return 0;	
 }
