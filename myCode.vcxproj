@@ -140,6 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Algorithms03.cpp" />
+    <ClCompile Include="ExpressionsAlgorithms.cpp" />
     <ClCompile Include="IntroductionHW.cpp" />
     <ClCompile Include="IntroductionTextExample.cpp" />
     <ClCompile Include="myCode.cpp" />

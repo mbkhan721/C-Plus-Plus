@@ -1,9 +1,10 @@
 #include<iostream>
+#include<cmath>
 using namespace std;
 
 int main() {
 
-	/*
+	
 	char c;
 	cout << "Enter a lowercase letter: ";
 	cin >> c;
@@ -18,13 +19,10 @@ int main() {
 	c = i; // implicit
 	// c = static_cast<char>(i); // explicit
 
-	/*
-	* This is a single line solution
-	* c = static_cast<char>(static_cast<int>(c)-('a'-'A'));
-	*/
-
 	// cout << "The uppercase equivalent is " << c << endl;
-	/*
+	
+		
+	
 	float myNumber;
 	cout << "Enter a floating-point value: ";
 	cin >> myNumber;
@@ -33,9 +31,9 @@ int main() {
 	int i = static_cast<int>(myNumber);
 	cout << "The integer value is: " << i << endl;
 	cout << "The remaining decimal value is: " << (myNumber - i) << endl;
-	*/
+	
 
-	/*
+	
 	// 1. Implicit version ---------------- lower to upper
 	char c;
 	cout << "Enter a lowercase letter: ";
@@ -48,10 +46,10 @@ int main() {
 	c = i;
 	cout << endl; 
 	cout << "The uppercase equivalent is: " << c << endl;
-	*/
+	
 
 
-	/*
+	
 	// 1b Explicit version ----------------- upper to lower
 	char z;
 	cout << "Enter a uppercase letter: ";
@@ -61,9 +59,9 @@ int main() {
 	x = x + 32;
 	z = static_cast<char>(x); // converting int back to char
 	cout << "The lowercase version is: " << z << endl;
-	*/
+	
 
-	/*
+	
 	// lower to upper ------------------ single line solution 
 	char y;
 	cout << "Enter a lowercase letter: ";
@@ -71,9 +69,9 @@ int main() {
 	cout << endl;
 	y = static_cast<char>(static_cast<int>(y) - ('b' - 'B'));
 	cout << "The uppercase equivalent is: " << y << endl;
-	*/
+	
 
-	/*
+	
 	// ALGORITHMS PROBLEM 2
 	char g;
 	cout << "Input a lowercase character: ";
@@ -92,20 +90,65 @@ int main() {
 	cout << g << endl << endl;   // printing out capital letter
 
 	cout << "The uppercase equivalent is: " << g << endl;
-	*/
+	
 
 	
-	// ALGORITMS PROBLEM 3
+	// ALGORITMS PROBLEM 3 -------------- single line solution -- Lower to Upper explicit
 	char k;
 	cout << "Input a lowercase character: ";
 	cin >> k;
 	cout << endl;
-	k = static_cast<char>(static_cast<int>(k) - ('a' - 'A'));
+	k = static_cast<char>(static_cast<int>(k) - 32);
 	cout << "The uppercase equivalent is '" << k << "'" << endl;
+	
 
+	// ALGORITHMS PROBLEM 4 -------------- single line solution -- Lower to Upper implicit
+	char d;
+	cout << "Input a lowercase character: ";
+	cin >> d;
+	d = static_cast<char>(static_cast<int>(d) - ('a' - 'A'));
+	cout << "The uppercase equivalent is '" << d << "'." << endl;
+	
 
-	// ALGORITHMS PROBLEM 4
+	// 5. 
+	float m;
+	cout << "Enter a floating-point value: ";
+	cin >> m;
+	int o = m; // turning float into int
+	cout << "The integer value is: " << o << endl; // printing int
+	cout << "The remaining decimal value is: " << m - o << endl; // input decimal minus integer
+	
+ 
+	// 6. 
+	float p;
+	cout << "Enter a floating-point value: ";
+	cin >> p;
+	int q = p;
+	cout << "The integer value is " << q << " and decimal value is " << p - q << "." << endl;
+	
 
+	// 7.
+	float r;
+	cout << "Input a positive floating-point number: ";
+	cin >> r;
+	cout << "a = " << r << endl;
+	int x = ceil(r);
+	cout << "a rounded up: " << x << endl;
+	r = floor(r);
+	cout << "a rounded down: " << r << endl << endl;
+
+	float s;
+	cout << "Input a negative floating-point number: ";
+	cin >> s;
+	cout << "b = " << s << endl;
+	int t = ceil(s);
+	cout << "b rounded up: " << t << endl;
+	int u = floor(s);
+	cout << "b rounded down: " << u << endl;
+	s = abs(s);
+	cout << "b absolute value: " << s << endl;
+	
+	
 
 	return 0;
 }
