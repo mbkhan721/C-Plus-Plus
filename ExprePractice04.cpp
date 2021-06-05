@@ -42,7 +42,7 @@ int main() {
 	* 
 	* 'x%3+5' +5 is where you wannt to start the range
 	*/
-
+	/*
 	int startAtSmalLetter = 13;
 	int numberOfValues = 8;
 	cout << "Modulus Division Range" << endl;
@@ -78,34 +78,79 @@ int main() {
 
 	// EXPRESSIONS PRACTICE PROBLEMS -------------------------------------------
 	// 1.
-	cout << "---------------------------------------------------------" << endl; /*
+	cout << "---------------------------------------------------------" << endl << endl; /*
 	cout.precision(4);
 	int a, b;
 	cout << "Enter a numerator: ";
 	cin >> a;
 	cout << "Enter a denominator: ";
 	cin >> b;
-	double c = b;
-	cout << "Regular Division: " << a / c << endl;
-	cout << "Integer Division: " << a / b << endl << endl;
+	
+	cout << "Regular Division: " << (a / static_cast<double>(b)) << endl;
+	cout << "Integer Division: " << (a / b) << endl << endl;
 	
 	// 2.
 	cout << 44 % 7 << endl;
 	cout << 50 % 4 << endl << endl;
-	*/
+	
 	// 3.
 	int d;
 	cout << "Enter a value: ";
 	cin >> d;
-	cout << "A value between 0 and 10 inclusive: " << (d % 11 + 0) << endl << endl;
+	cout << "A value between 0 and 10 inclusive: " << (d % 11) << endl << endl;
 	
-	// 4.
+	// 4. (34 - 30 + 1)
 	int e;
 	cout << "Enter a value: ";
 	cin >> e;
 	cout << "A value between 30 and 34 inclusive: " << (e % 5 + 30) << endl << endl;
 	
-	// 5.
+	/* 6. If a%b==0, what can we say about a relative to b and b relative to a?
+	* 'A' is a multiple of 'B' and 'B' is a factor of 'A'	
+	*/
+	/*
+	// 7.
+	int f, g;
+	f = 7, g = 21;
+	cout << (f == g) << endl;
+	cout << (f >= g) << endl;
+	cout << (f < g) << endl << endl;
+
+	cout << "Negated statements: " << endl;
+	cout << (f != g) << endl;
+	cout << (f < g) << endl;
+	cout << (f >= g) << endl << "\n";
+	
+	// 8.
+	int h;
+	cout << "Enter a value for x: ";
+	cin >> h;
+	cout << "X incremented by 2: " << (h += 2) << endl;
+	cout << "X decremented by 1: " << --h << endl;
+	*/
+	// 9.
+	int x = 5, y = 6, z = 7;
+	cout << "Given x = " << x << ", y = " << y << ", z = " << z << endl;
+
+	cout << "X\t" << "Y\t" << "Z\t" << endl;
+	cout << "---\t" << "---\t" << "---\t" << endl;
+
+	cout << x << "\t" << y << "\t" << z << endl;
+	cout << x << "\t" << y << "\t" << z << endl;
+	cout << x << "\t" << y << "\t" << z << endl;
+	cout << x << "\t" << y << "\t" << z << endl;
+	cout << x << "\t" << y << "\t" << z << endl;
+
+	cout << endl;
+
+	cout << "X\t" << "Y\t" << "Z\t" << endl;
+	cout << "---\t" << "---\t" << "---\t" << endl;
+
+	cout << x++ << "\t" << (y += 2) << "\t" << --z << endl;
+	cout << x++ << "\t" << (y += 2) << "\t" << --z << endl;
+	cout << x++ << "\t" << (y += 2) << "\t" << --z << endl;
+	cout << x++ << "\t" << (y += 2) << "\t" << --z << endl;
+	cout << x++ << "\t" << (y += 2) << "\t" << --z << endl;
 
 
 
