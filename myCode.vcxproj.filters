@@ -42,5 +42,8 @@
     <ClCompile Include="VarHW03.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ExprePractice04.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

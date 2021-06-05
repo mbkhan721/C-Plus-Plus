@@ -139,6 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ExprePractice04.cpp" />
     <ClCompile Include="VarAlg03.cpp" />
     <ClCompile Include="ExpressionsAlg04.cpp" />
     <ClCompile Include="IntroductionHW.cpp" />

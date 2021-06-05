@@ -1,8 +1,8 @@
 #include<iostream>
 using namespace std;
 
-int main() {
-	
+int vhw() {
+	/*
 	// 1.
 	char v;
 	cout << "Input an uppercase character: ";
@@ -29,6 +29,6 @@ int main() {
 	int c;
 	c = static_cast<int>(a) + static_cast<int>(b);
 	cout << "Sum of the integers: " << c << endl;
-
+	*/
 	return 0;
 }
