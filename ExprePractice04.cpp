@@ -2,7 +2,7 @@
 #include<time.h>
 using namespace std;
 
-int main() {
+int expPrac() {
 	
 	cout << 3 % 4 << endl; // 4 goes into 3 zero times and there's 3 left over. 
 	cout << 2 % 3 << endl << endl; // 3 goes into 2 zero times and there's 2 left over. 
