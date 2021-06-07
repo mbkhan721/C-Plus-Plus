@@ -3,7 +3,7 @@
 #include<time.h>
 using namespace std;
 
-int main() {
+int expAlg() {
 	/*
 	cout.setf(ios::fixed);
 	cout.precision(2);
@@ -54,7 +54,7 @@ int main() {
 	cout << (c % e == 0) << endl;
 	cout << "Is " << d << " a multiple of " << c << "? ";
 	cout << (d % c == 0) << endl << endl;
-	*/
+	
 	// 5.
 	srand(time(NULL));
 	cout << "Random value between 0 and 10 inclusive: " << rand() % 11 << endl;
@@ -62,9 +62,21 @@ int main() {
 	cout << "Random value between -4 and 2 inclusive: " << rand() % 7 - 4 << endl;
 	cout << "Random value between 10 and 20 exclusive: " << rand() % 9 + 11 << endl;
 	cout << "Random value between 5 and 9 exclusive: " << rand() % 3 + 6 << endl << endl;
+	
 
+	int x;
+	int y;
+	int z;
+	cout << "Enter a value for x: ";
+	cin >> x;
+	cout << "Enter a multiple as y: ";
+	cin >> y;
+	cout << "enter a factor as z: ";
+	cin >> z;
+	cout << "Is " << z << " a factor of " << x << "? " << (x % z == 0) << endl;
 
-
+	cout << "Is " << y << " a multiple of " << x << "? " << (y % x == 0) << endl << endl;
+	*/
 
 	//cout.setf(ios::fixed);
 	float dollars;
