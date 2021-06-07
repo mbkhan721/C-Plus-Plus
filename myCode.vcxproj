@@ -139,9 +139,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="BranchingAlg05.cpp" />
     <ClCompile Include="BranchingPrac05.cpp" />
     <ClCompile Include="ExprePractice04.cpp" />
     <ClCompile Include="ExprHW04.cpp" />
+    <ClCompile Include="LoopPrac.cpp" />
     <ClCompile Include="TestExample06_07.cpp" />
     <ClCompile Include="VarAlg03.cpp" />
     <ClCompile Include="ExpressionsAlg04.cpp" />

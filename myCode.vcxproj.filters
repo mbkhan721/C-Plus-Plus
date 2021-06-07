@@ -54,5 +54,11 @@
     <ClCompile Include="TestExample06_07.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="LoopPrac.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BranchingAlg05.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
