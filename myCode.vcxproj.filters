@@ -60,5 +60,8 @@
     <ClCompile Include="BranchingAlg05.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="NestedLoopsPrac.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-int main() {
+int branAlg() {
 	/*
 	// 1.
 	int a = 1, b = 2;
