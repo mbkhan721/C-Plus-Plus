@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-int main() {
+int loopExam() {
 	cout << endl;
 	/*
 	cout << endl;
@@ -98,7 +98,7 @@ int main() {
 	}
 	cout << "\n\n";
 	--------------------------------------------------- */
-	/* 
+	/*
 	for (initialize var, condition, update var) {
 		code to repeat
 	}
@@ -236,7 +236,7 @@ int main() {
 		}
 		cout << i << "\n"; // print odd values
 	}
-	*/
+	
 
 
 
@@ -251,7 +251,7 @@ int main() {
 	}
 	cout << "You decided to continue the program." << endl;
 
-
+	*/
 
 
 	
