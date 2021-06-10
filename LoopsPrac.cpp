@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-int main() {
+int loopPrac() {
 	cout << endl;
 	/*
 	cout << "Loop Practice 1)\nDo While:\n"; // 1. Do while
@@ -56,8 +56,8 @@ int main() {
 	}
 	cout << "\n\nExiting Program..." << endl;
 	
-
-
+	
+	
 	cout << "\nLoop Practice 6)\nWhile Loop:\n\n"; // 6. While Loop
 	
 	int countdown = 10;
@@ -69,8 +69,16 @@ int main() {
 			break;
 		}
 	}
-	
 
+	// 6.
+	int x = 10;
+	while (x >= 1) {
+		cout << x << endl;
+		--x;
+	}
+	cout << "Happy New Year!" << endl << endl;
+	
+	
 	cout << "\nLoop Practice 7)\nFor Loop:\n\n"; // 7. For Loop
 	
 	int counter = 11;
@@ -79,8 +87,14 @@ int main() {
 		cout << counter << endl;
 	}
 	cout << "Happy New Year!" << endl << endl;
-	
 
+	// 7.
+	for (int x = 10; x >= 1; --x) {
+		cout << x << endl;
+	}
+	cout << "Happy New Year!" << endl << endl;
+	
+	
 	cout << "\nLoop Practice 8)\nFor Loop:\n\n"; // 8. For Loop
 
 	for (int i = 40; i >= 20; --i) {
@@ -90,7 +104,7 @@ int main() {
 	}
 	cout << endl;
 	
-
+	
 	cout << "\nLoop Practice 9)\nFor Loop:\n\n"; // 9. For Loop
 
 	for (int i = 11; i < 30; ++i) {
@@ -101,8 +115,8 @@ int main() {
 	}		
 	cout << endl;
 	
-
-
+	
+	
 	cout << "\nLoop Practice 10)\nFor Loop:\n\n"; // 10. For Loop
 
 	int min;
@@ -113,33 +127,22 @@ int main() {
 		cout << i << " ";
 	}
 	cout << endl;
-	*/
-
+	
+	
 	cout << "\nLoop Practice 1)\nFor Loop:\n\n"; // 11. For Loop
 
 	int min;
 	int max;
-	cout << "Enter a min and max value: ";
-	cin >> min >> max;
-	while (min <= max) {
-		for (int i = min; i < max; ++i) {
-			if (i % 2 != 0) {
-				cout << i << " ";
-			}
+	do {
+		cout << "Enter a min and max value: ";
+		cin >> min >> max;
+	} while (min >= max);
+	for (int i = max - 1; i > min; --i) {
+		if (i % 2 != 0) {
+			cout << i << " ";
 		}
 	}
-
-
-
-
-
-
-
-
-
-
-
-
-
+	*/
+	cout << endl;
 	return 0;
 }
