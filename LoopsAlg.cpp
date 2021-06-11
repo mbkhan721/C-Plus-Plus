@@ -1,5 +1,6 @@
 #include<iostream>
 #include <string>
+#include<cmath>
 using namespace std;
 
 int main() {
@@ -86,23 +87,97 @@ int main() {
 		}		
 	}
 	cout << words << " word(s)" << endl;
-	*/
+	
 
 	// 7.
 	// if s == "Bilal Khan";
-	// s == Bilal Khan, i = 0, 
+	// s == Bilal Khan, i = 0, temp=B, s[0]=n, s[9]=B,
+	// s == nilal KhaB, i = 1, temp=i, s[1]=a, s[8]=i,
+	// s == nalal KhiB, i = 2, temp=l, s[2]=h, s[7]=l,
+	// s == nahal KliB, i = 3, temp=a, s[3]=k, s[6]=a,
+	// s == nahKl aliB, i = 4, temp=l, s[4]= , s[5]=l,
+	// s == nahK laliB, i = 5, end loop
 	string s;
 	cout << "Enter a string: ";
 	getline(cin, s);
+	int len = s.length();
 
-	for (int i = 0; i < s.length() / 2; ++i) { // iterate from start to middle of the string (length/2)
+	for (int i = 0; i < len / 2; ++i) { // iterate from start to middle of the string (length/2)
 		char temp = s[i];						// backup current element
-		s[i] = s[s.length() - i - 1];			// replace current element with its mirror element
-		s[s.length() - i - 1] = temp;			// replace mirror element with original element
+		s[i] = s[len - i - 1];			// replace current element with its mirror element
+		s[len - i - 1] = temp;			// replace mirror element with original element
 		cout << s << endl;
 	}
-	cout << s << endl;
+	cout << "\n" << s << endl;
+	
 
+	// 8.
+	int n;
+	cout << "Enter a value for n: ";
+	cin >> n;
+
+	cout << "Factors: ";
+	for (int i = 1; i <= n; ++i) {
+		if (n % i == 0) {				// is i a factor of n || is n a multiple of i
+			cout << i << " ";
+		}
+	}
+	
+
+	// 9.
+	long long b = 11;
+	int counter = 0;
+	for (int i = 1; i <= b; ++i) {
+		if (b % i == 0) {
+			counter++;
+		}		
+	}
+	cout << "Counter: " << counter << endl;
+	if (counter == 2) { // multiplies by 1 and itself
+		cout << b << " is a prime number." << endl;
+	}
+	else
+	{
+		cout << b << " is not a prime number." << endl;
+	}
+	
+
+	// 10.
+	long long b = 1234567966;
+	bool isPrime = true;
+	for (int i = 2; i < b; ++i) {
+		if (b % i == 0) {
+			isPrime = false;
+			break;
+		}
+	}
+	if (isPrime) { // multiplies by 1 and itself
+		cout << b << " is a prime number." << endl;
+	}
+	else
+	{
+		cout << b << " is not a prime number." << endl;
+	}
+	
+
+	// 11.
+	long long b = 11;
+	bool isPrime = true;
+	for (int i = 2; i <= sqrt(b); ++i) {
+		if (b % i == 0) {
+			isPrime = false;
+			break;
+		}
+	}
+	if (isPrime) { // multiplies by 1 and itself
+		cout << b << " is a prime number." << endl;
+	}
+	else
+	{
+		cout << b << " is not a prime number." << endl;
+	}
+	*/
+	
 
 
 

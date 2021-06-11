@@ -145,6 +145,7 @@
     <ClCompile Include="ExprHW04.cpp" />
     <ClCompile Include="LoopExamp.cpp" />
     <ClCompile Include="LoopsAlg.cpp" />
+    <ClCompile Include="LoopsHW.cpp" />
     <ClCompile Include="LoopsPrac.cpp" />
     <ClCompile Include="NestedLoopsPrac.cpp" />
     <ClCompile Include="TestExample06_07.cpp" />
