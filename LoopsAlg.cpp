@@ -3,7 +3,7 @@
 #include<cmath>
 using namespace std;
 
-int main() {
+int loopAlg() {
 	cout << endl;
 	/*
 	// 1.
