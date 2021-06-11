@@ -147,6 +147,7 @@
     <ClCompile Include="LoopsAlg.cpp" />
     <ClCompile Include="LoopsHW.cpp" />
     <ClCompile Include="LoopsPrac.cpp" />
+    <ClCompile Include="NestedLoopsEx.cpp" />
     <ClCompile Include="NestedLoopsPrac.cpp" />
     <ClCompile Include="TestExample06_07.cpp" />
     <ClCompile Include="VarAlg03.cpp" />
