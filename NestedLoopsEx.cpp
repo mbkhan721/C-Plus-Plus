@@ -1,9 +1,9 @@
 #include<iostream>
 using namespace std;
 
-int main() {
+int nle() {
 	cout << endl;
-
+	/*
 	// CONCEPT
 	// this nested loop processes a total of i * j iterations,
 	// or 2 * 3 == 6 iterations in total
@@ -125,23 +125,7 @@ int main() {
 		}
 		cout << "\n";
 	}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	*/
 
 	cout << endl;
 	return 0;
