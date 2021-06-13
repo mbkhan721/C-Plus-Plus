@@ -1,9 +1,9 @@
 #include<iostream>
 using namespace std;
 
-int main() {
+int nlhw() {
 	cout << endl;
-	
+	/*
 	// 1.
 	cout << "\n1.\n";
 
@@ -43,16 +43,7 @@ int main() {
 		}
 		cout << endl;
 	}
-
-
-
-
-
-
-
-
-
-
+	*/
 
 
 	cout << endl;
