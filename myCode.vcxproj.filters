@@ -78,5 +78,8 @@
     <ClCompile Include="NestedLoopsAlg.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="NestedLoopsHW.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
