@@ -143,7 +143,9 @@
     <ClCompile Include="BranchingPrac05.cpp" />
     <ClCompile Include="ExprePractice04.cpp" />
     <ClCompile Include="ExprHW04.cpp" />
+    <ClCompile Include="FunctionPrac.cpp" />
     <ClCompile Include="FunctionsEx.cpp" />
+    <ClCompile Include="FunctionsHW.cpp" />
     <ClCompile Include="LoopExamp.cpp" />
     <ClCompile Include="LoopsAlg.cpp" />
     <ClCompile Include="LoopsHW.cpp" />
