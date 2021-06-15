@@ -1,7 +1,7 @@
 #include<iostream>
 #include<string>
 using namespace std;
-/*
+
 int getFirstIndex(string s, char c);
 
 string reverse(string s);
@@ -44,15 +44,11 @@ double getMax(int a, double b) {
 	return b;
 }
 
-int getAsciiValue(char a) {
-	//a = static_cast<int>(a) + ('B' - 'b');
-	return (int) a;
-}
 
 
 int main() {
 	cout << endl;
-	
+	/*
 	// 1.
 	cout << "1.\n";
 	string word;
@@ -79,82 +75,19 @@ int main() {
 	cin >> n;
 	cout << "n! = " << factorial(n) << endl;
 	
-	// 5.
-	const int DIM = 5;
-	for (int row = 1; row <= DIM; ++row) {
-		for (int col = 1; col <= DIM; ++col) {
-			if (row % 2 != 0 && col % 2 != 0) {
-				cout << "x ";
-			}
-			else if (col == DIM / 2 + 1 ) {
-				cout << "x ";
-			}
-			else
-				cout << "o ";
-		}
-		cout << endl;
-	}
-	cout << endl << endl;
-
-	const int D = 5; // must work for D==3 and D==5
-
-	for (int r = 1; r <= D; ++r) {
-		for (int c = 1; c <= D; ++c) {
-			if (c > r || c == r - 2) { // line 2 SW of \ OR all coordinates NW of 
-				cout << "X ";
-			}
-			else {
-				cout << "0 ";
-			}
-		}
-		cout << "\n";
-	}
-
-	cout << endl << endl;
-	
-	int sum;
-	int max = 10;
-	for (int i = 0; i <= max; i++) {
-		sum = 0;
-		for (int j = 1; j <= i; j++) {
-			sum += j;
-		}
-		cout << sum << endl;
-	}
-
+	cout << endl;
+		
 	string s;
 	cout << "TEST Enter a string of any length: ";
 	cin >> s;
-	for (int i = 0; i < s.length(); ++i) {
-		if (s[i%2!=0]) {
-			cout << s[i];
-		}
-	}
-	cout << endl << endl;
-
-	// cout << getMax(10, 15.5) << endl;
-
-	// cout << getAsciiValue('A') << endl;
-	cout << "\n3.\n";
-	int o = 5;
-
-	for (int r = 1; r <= o; ++r) {
-		for (int c = 1; c <= o; ++c) {
-			if (c <= r) {
-				cout << "x";
-			}
-			else
-				cout << " ";
-		}
-		cout << endl;
+	for (int i = 0; i <= s.length(); ++i) {
+		cout << s[i] << endl;
 	}
 
-	cout << endl << endl;
-	int x;
-	do {
-		cout << "Enter an int: ";
-		cin >> x;
-	} while (x % 10 != 0);
+	cout << endl;
+	*/
+	// 5.
+
 	
 
 
@@ -205,4 +138,3 @@ int factorial(int n) {
 	return product;										// return product
 }
 
-*/
