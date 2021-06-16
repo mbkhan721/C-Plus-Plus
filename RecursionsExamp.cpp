@@ -1,8 +1,10 @@
 #include<iostream>
 #include<string>
 using namespace std;
-
+/*
 void stack(int n);
+void recurse(int n);
+void d(int n);
 
 int main() {
 
@@ -47,14 +49,14 @@ int main() {
 	// EVERY TIME you recurse, you MUST reduce the problem
 
 
-	/*
-	void f(int n) {
-		if(n==1) { // if true the condition ends the recursive process
-		return; 
-		}
-		f(n-1); // recurse by calling the function f again
-	}
-	*/
+	// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+	// void f(int n) {
+	//  	if(n==1) { // if true the condition ends the recursive process
+	//			return; 
+	//		}
+	//		f(n-1); // recurse by calling the function f again
+	//	}
+	// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 	// In the example above, f function will call f of n-1
 	// f of n-1 will call f or n-1, which is equivalent to f of n-2 and so on
@@ -64,8 +66,18 @@ int main() {
 	// Recursion ends once the condition becomes true.
 	// All functions wait for the next function to terminate.
 
+	// Base case is the condition to end the recursive process. 
+	// Recursive task repeats some action which include a recursive function calls, its purpose is to reduce the
+	// problem from the original problem.
 
+	cout << endl;
+	recurse(5);
+	cout << "main()";
 
+	cout << endl << endl;
+	cout << "Test 3 question: \n";
+	d(12);
+	cout << "main()";
 
 	cout << endl;
 	return 0;
@@ -74,3 +86,48 @@ int main() {
 void stack(int n) {
 	cout << n << endl;
 }
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// Tracing the problem below -- void recurse()
+//
+//	   recurse(5) print 5
+//		 recurse(4) print 4
+//			recurse(3) print 3
+//			  recurse(2) print 2
+//				recurse(1) print 1
+//			  recurse(2)
+//			recurse(3)
+//		 recurse(4)
+//	   recurse(5)
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+void recurse(int n) {
+	if (n == 1) {						// Base case
+		cout << n << " ";				// printing 1
+		cout << "\n\nPrinting the function calls as they return in \nfirst-in last-out structure back to main:\n\n";
+		return;
+	}
+	cout << n << " ";					// if n was 5, printing 5, 4, 3, 2
+	recurse(n - 1);						// Recursive task
+	cout << "Function(" << n << ") ";
+}
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// Tracing the problem below -- void d()
+//
+//	   d(12) print 12
+//			d(4) print 4
+//				d(1) print 1
+//			d(4)
+//		d(12)
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+void d(int n) {
+	if (n < 2) {						// Base case
+		cout << n << " ";				// printing 1
+		cout << "\n\nPrinting the function calls as they return in \nfirst-in last-out structure back to main:\n\n";
+		return;
+	}
+	cout << n << " ";					// if n = 12, printing 12, 4
+	d(n / 3);							// Recursive task
+	cout << "Function(" << n << ") ";
+}
+*/
