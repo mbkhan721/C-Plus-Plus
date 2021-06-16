@@ -10,24 +10,6 @@ void validate(string s);
 
 int factorial(int n);
 
-bool isFactor(int a, int b) {
-	if (b % a == 0) {
-		return true;
-	}
-	else {
-		return false;
-	}
-}
-
-char getLastIndex(string str, char s) {
-	for (int i = str.length() - 1; i >= 0; --i) {
-		if (str[i] == 's') {
-			return i;
-		}
-		return -1;
-	}
-}
-
 int getNumDigits(int n) {
 	int count = 0;
 	while (n != 0) {

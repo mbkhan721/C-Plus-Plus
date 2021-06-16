@@ -2,7 +2,7 @@
 #include<string>
 #include<cmath>
 using namespace std;
-
+/*
 void multiplication(int n);
 void primeNum(int p);
 
@@ -43,3 +43,4 @@ void primeNum(int p) {
 	}	
 }
 
+*/
