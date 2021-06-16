@@ -1,7 +1,7 @@
 #include<iostream>
 #include<string>
 using namespace std;
-
+/*
 int getFirstIndex(string s, char c);
 
 string reverse(string s);
@@ -56,7 +56,7 @@ int EuclidsGCD(int a, int b);
 
 int main() {
 	cout << endl;
-	/*
+	
 	// 1.
 	cout << "1.\n";
 	string word;
@@ -103,7 +103,7 @@ int main() {
 	cout << "Enter a value for n: ";
 	cin >> b;
 	cout << factors(b) << endl;
-	*/
+	
 	// 7.
 	cout << "\n7.\n";
 	cout << "GCD(10, 8) = " << GCD(10, 8) << endl;
@@ -222,3 +222,4 @@ int EuclidsGCD(int a, int b) {
 	cout << "a: " << a << "	b: " << b << endl;
 	return a;											// since b is 0, a is the gcd, return it || GCD(a, 0) = a
 }
+*/
