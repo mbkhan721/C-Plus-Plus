@@ -1,10 +1,12 @@
 #include<iostream>
 #include<string>
 using namespace std;
-
+/*
 void one(int n);
 int summation(int n);
 int compute(int a, int b);
+void reverse(string s, int length);
+void summationII(int n);
 
 int main() {
 
@@ -17,10 +19,14 @@ int main() {
 	cout << "\n3) Rrecursive function to compute n to the e power:\n"; // 3.
 	cout << "2 to the power of 4: " << compute(2, 4) << endl;
 
+	//cout << "\n4) Rrecursive function to print a string in reverse:\n"; // 4.
+	//string s;
+	//cout << "Enter a string: ";
+	//getline(cin, s);
+	//reverse(s, s.length());
 
-
-
-
+	cout << "\n5) Rrecursive function to print all summations from n to 1 inclusive:\n"; // 5.
+	summationII(5);
 
 	cout << endl;
 	return 0;
@@ -32,7 +38,7 @@ void one(int n) {
 		cout << n << endl;
 		return;
 	}
-	one(n - 1);										// Recursive task -- when n < i; keep recursive to reduce n by 1
+	one(n - 1);										// Recursive task -- when n > i; keep recursive to reduce n by 1
 	cout << n << endl;								// PRINTING AS THE FUNCTIONS ARE RETURNING
 }
 // ----------------------- Tracing the process above -- void one()
@@ -87,3 +93,56 @@ int compute(int n, int e) {
 //		compute(2, 4) return 8 * 2
 // Returns to Main()
 // -----------------------
+// 4.
+void reverse(string s, int length) {
+	if (length == 1) {									// If length = 1, return
+		cout << s[length - 1] << endl;
+		return;
+	}
+	cout << s[length - 1] << endl;
+	reverse(s, length - 1);
+}
+// ----------------------- Tracing the process above -- void reverse()
+// Starts at Main()
+//	reverse(Hello, 5) Print o
+//		reverse(Hello, 4) Print l
+//			reverse(Hello, 3) Print l
+//				reverse(Hello, 2) Print e
+//					reverse(Hello, 1) Print H			PRINTING AS THE FUNCTIONS ARE RETURNING
+//				reverse(Hello, 2) 
+//			reverse(Hello, 3) 
+//		reverse(Hello, 4)
+//	reverse(Hello, 5) 
+// Returns to Main()
+// -----------------------
+// 5.
+void summationII(int n) {
+	if (n == 1) {										// BASE CASE -- When n = 1, print 1 and return
+		cout << n << endl;
+		return;
+	}													// Recursive task -- When n is greater than 1
+	int sum = 0;
+	for (int i = 1; i <= n; i++) {						// Iterate from 1 to n inclusive
+		sum += i;										// Sum each value of i
+	}
+	cout << sum << endl;								// Print the summation of n
+	summationII(n - 1);									// Recurse to reduce n by 1
+}
+														// If summationII() does not recurse, we'll only get
+															// the value of n which is the last digit. We will
+															// get all values from 1 to n.
+
+// ----------------------- Tracing the process above -- void summationII()
+// Starts at Main()
+//	summationII(5) Print 15
+//		summationII(4) Print l0
+//			summationII(3) Print 6
+//				summationII(2) Print 3
+//					summationII(1) Print 1			PRINTING AS THE FUNCTIONS ARE RETURNING
+//				summationII(2) 
+//			summationII(3) 
+//		summationII(4)
+//	summationII(5) 
+// summationII to Main()
+// -----------------------
+*/
