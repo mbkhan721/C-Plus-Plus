@@ -156,8 +156,10 @@
     <ClCompile Include="NestedLoopsEx.cpp" />
     <ClCompile Include="NestedLoopsHW.cpp" />
     <ClCompile Include="NestedLoopsPrac.cpp" />
+    <ClCompile Include="RecursionsAlg.cpp" />
     <ClCompile Include="RecursionsExamp.cpp" />
     <ClCompile Include="RecursionsExampII.cpp" />
+    <ClCompile Include="RecursionsHW.cpp" />
     <ClCompile Include="RecursionsPrac.cpp" />
     <ClCompile Include="TestExample06_07.cpp" />
     <ClCompile Include="VarAlg03.cpp" />
