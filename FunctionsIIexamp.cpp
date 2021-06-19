@@ -73,10 +73,10 @@ int main() {
 	cout << "Memory address of &z: " << &z << endl;
 	cout << "Output the value of p which is the memory address of z: " << p << endl;		
 														// Print the value of p (The memory address of z)
-														// The value of p is the memory address of x
-														// we say that p points to x
-	// the value of p is the memory address of x
-	// dereferencing p returns the variable x
+														// The value of p is the memory address of z
+														// we say that p points to z
+	// the value of p is the memory address of z
+	// dereferencing p returns the variable z
 
 	cout << "\nMemory of &p: " << &p << endl;
 	cout << "p is a separate variable from z. However, the value of p is the memory address of z." << endl;

@@ -43,8 +43,8 @@ int main() {
 	cout << "\nSwapped values:\nx: " << c << ", y: " << d << endl;
 	
 	// 3.
-	srand(time(NULL));
 	cout << "\n3.\nWinning numbers\n";
+	srand(time(NULL));
 	int e, f, g, h, i, j;
 	winNums(e, f, g, h, i, j);
 	cout << "The winning numbers are: " 
