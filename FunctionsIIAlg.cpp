@@ -24,7 +24,7 @@ void factors(int n) {
 				cout << j << " ";					// Print j because j is the value of the inner loop
 			}										// i is the value of outter loop
 		}
-		cout << endl;
+		cout << endl;								// new line after each fator
 	}
 }
 
@@ -38,7 +38,7 @@ void primeFactors(int n) {
 			n /= factor; // 18 = 18 / 2				// Reduce n by extracting the factor
 		}
 		++factor;									// Find the smallest factor to extract
-													// once it checks of all the twos are factor, it will check all the threes
+													// once it checks if all the twos are factor, it will check all the threes
 													// once it's done checking all the threes, it will check all the fours, and
 													// so on...
 	}
@@ -61,12 +61,30 @@ void triangles(int n) {
 		}
 		cout << endl;
 	}
-
 }
 
+// 5.
+void graph(int n) {
+	if (n == 0) {										// Base case
+		return;
+	}
+	graph(n / 10);										// Remove the least significant digit on each recurse
+	for (int i = 1; i <= n % 10; i++) {					// Print the last digit on the return
+		cout << "*";
+	}
+	cout << endl;										// Print stars in new line after each loop
+}
+// printDigits(6529)
+//	 printDigits(652)
+//		printDigits(65)
+//		  printDigits(6) loops 6 times --> prints 6 stars
+//		printDigits(65) loops 5 times --> prints 5 stars
+//	 printDigits(652) loops 2 times --> prints 2 stars
+// printDigits(6529) loops 9 times --> prints 9 stars
+/*
 // -----------------------------------------------------------------------------------------------------------------
 int main() {
-	/*
+	
 	// 1.
 	cout << "\n1.\n";
 	srand(time(NULL));
@@ -113,7 +131,7 @@ int main() {
 	cout << "Enter a positive integer: ";
 	cin >> m;
 	primeFactors(m);
-	*/
+	
 
 	// ---------------------------------------	4.
 	cout << "\n4.	 Prints the following 2*n+1 by 2 * n + 1 image\n";
@@ -121,7 +139,14 @@ int main() {
 	cout << "Enter a positive integer: ";
 	cin >> p;
 	triangles(p);
+	
 
+	// ---------------------------------------	5.
+	cout << "\n5.	 Rrecursively extracts each digit from n in forward order\n";
+	int q;
+	cout << "Enter a positive integer: ";
+	cin >> q;
+	graph(q);
 	
 
 
@@ -129,3 +154,4 @@ int main() {
 	cout << endl;
 	return 0;
 }
+*/
