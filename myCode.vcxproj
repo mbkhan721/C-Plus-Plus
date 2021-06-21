@@ -149,6 +149,7 @@
     <ClCompile Include="FunctionsHW.cpp" />
     <ClCompile Include="FunctionsIIAlg.cpp" />
     <ClCompile Include="FunctionsIIexamp.cpp" />
+    <ClCompile Include="FunctionsIIHW.cpp" />
     <ClCompile Include="FunctionsIIPrac.cpp" />
     <ClCompile Include="FunctionsTestEx.cpp" />
     <ClCompile Include="LoopExamp.cpp" />
