@@ -38,7 +38,7 @@ void sort(int &a, int &b, int &c) {			// if argument is 3 4 5
 }
 
 
-
+/*
 // ------------------------------------------------------------------------------------------------------
 int main() {
 
@@ -63,11 +63,10 @@ int main() {
 	cin >> a >> b >> c;
 
 	cout << a << " " << b << " " << c << "\n";					// before
-
-	sort(a, b, c);
-
+	sort(a, b, c);												// call the sort function
 	cout << a << " " << b << " " << c << "\n";					// after
 
 	cout << endl;
 	return 0;
 }
+*/
