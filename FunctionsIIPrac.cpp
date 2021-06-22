@@ -2,14 +2,14 @@
 #include<time.h>
 using namespace std;
 /*
-void swap(int &a, int &b) {														// this is a PASS BY REFERENCE
+void swap(int &a, int &b) {											// this is a PASS BY REFERENCE
 	int temp = a;
 	a = b;
 	b = temp;
 
 }
 
-void winNums(int &e, int &f, int &g, int &h, int &i, int &j) {					// this is a PASS BY REFERENCE
+void winNums(int &e, int &f, int &g, int &h, int &i, int &j) {		// this is a PASS BY REFERENCE
 	
 	e = rand() % 75 + 1;
 	f = rand() % 75 + 1;

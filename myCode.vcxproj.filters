@@ -126,5 +126,8 @@
     <ClCompile Include="ArraysExamp.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ArraysPractice.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
