@@ -1,9 +1,9 @@
 #include<iostream>
 #include<time.h>
 using namespace std;
-
+/*
 int main() {
-	/*
+	
 	// 1.
 	cout << "\n1. Initialize a string array named person with your name:\n";
 
@@ -143,7 +143,7 @@ int main() {
 		}
 		cout << endl;
 	}
-	*/
+	
 
 	// 8 -----------------------------------------
 	cout << "\n\n8. 4x5 Random array:\n\n";
@@ -181,3 +181,4 @@ int main() {
 	cout << endl;
 	return 0;
 }
+*/

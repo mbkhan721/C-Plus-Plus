@@ -139,6 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ArraysAlg.cpp" />
     <ClCompile Include="ArraysExamp.cpp" />
     <ClCompile Include="ArraysPractice.cpp" />
     <ClCompile Include="BranchingAlg05.cpp" />
