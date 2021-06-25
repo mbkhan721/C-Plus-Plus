@@ -2,9 +2,15 @@
 #include<time.h>
 using namespace std;
 
+void swap(char &e1, char &e2) {
+	char temp = e1;
+	e1 = e2;
+	e2 = temp;
+}
 
 int main() {
-
+	/*
+	// -------------------------------------- 1.
 	cout << "\n1. " << "\n";
 	int a[5];								// declare an array of 5 integers
 
@@ -32,11 +38,34 @@ int main() {
 		}
 	}
 	cout << "\Max: " << max << endl;		// determine the largest element in the array.
+	*/
 
 
+	// -------------------------------------- 2.
+	cout << "\n2. " << "\n";
+
+	const int SIZE = 26;
+	char alphabet[SIZE];
+
+	for (int i = 0; i < SIZE; i++) {										// Populating the array with alphabets
+		alphabet[i] = i + 'A';
+	}
+	cout << "Original: ";
+	for (int i = 0; i < SIZE; i++) {										// Printing the original array
+		cout << alphabet[i] << " ";
+	}
+	cout << endl;															// Swapping the array content
+	for (int i = 0, j = SIZE - 1; i < SIZE / 2; i++, j--) {					// i starts form left to the middle, j starts from length - 1
+		swap(alphabet[i], alphabet[j]);										// i increments and j decrements
+		cout << "i = " << i << " j = " << j << endl;						
+	}																		 
+	cout << "\nReversed: ";													// Printing the reversed array
+	for (int i = 0; i < SIZE; i++) {
+		cout << alphabet[i] << " ";
+	}
 
 
-
+	// -------------------------------------- 3.
 
 
 
