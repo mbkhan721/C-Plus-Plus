@@ -1,7 +1,7 @@
 #include<iostream>
 #include<time.h>
 using namespace std;
-
+/*
 void swap(char &e1, char &e2) {
 	char temp = e1;
 	e1 = e2;
@@ -9,7 +9,7 @@ void swap(char &e1, char &e2) {
 }
 
 int main() {
-	/*
+	
 	// -------------------------------------- 1.
 	cout << "\n1. " << "\n";
 	int a[5];								// declare an array of 5 integers
@@ -38,7 +38,7 @@ int main() {
 		}
 	}
 	cout << "\Max: " << max << endl;		// determine the largest element in the array.
-	*/
+	
 
 
 	// -------------------------------------- 2.
@@ -63,16 +63,93 @@ int main() {
 	for (int i = 0; i < SIZE; i++) {
 		cout << alphabet[i] << " ";
 	}
+	
 
 
-	// -------------------------------------- 3.
+	// -------------------------------------- 3. 
+	cout << "\n3. " << "\n";
+	const int D1 = 7;
+	const int D2 = 20;
+	string flag[D1][D2];
+
+	for (int r = 0; r < D1; r++) {
+		for (int c = 0; c < D2; c++) {
+			if (r <= 3 && c < 7) {
+				flag[r][c] = "* ";
+			}
+			else if (r % 2 == 0) {											// If rows are even, print "="
+				flag[r][c] = "= ";
+			}
+			else {
+				flag[r][c] = "- ";
+			}			
+		}
+	}
+	for (int r = 0; r < D1; r++) {
+		for (int c = 0; c < D2; c++) {
+			cout << flag[r][c] << " ";
+		}
+		cout << "\n";
+	}
+	
 
 
+	// -------------------------------------- 4.
+	cout << "\n4. " << "\n";
+	const int R = 4;
+	const int C = 4;
+	int integers[R][C];
+	srand(time(NULL));
 
+	for (int i = 0; i < R; i++) {
+		for (int j = 0; j < C; j++) {
+			integers[i][j] = rand() % 16 + 10;
+		}
+	}
+	for (int i = 0; i < R; i++) {
+		for (int j = 0; j < C; j++) {
+			cout << integers[i][j] << " ";
+		}
+		cout << endl;
+	}
+	cout << "\nRow 2: ";
+	for (int col = 0; col < C; col++) {
+		cout << integers[1][col] << " ";
+	}
+	cout << "\nCol 3: ";
+	for (int row = 0; row < R; row++) {
+		cout << integers[row][2] << " ";
+	}
+	cout << "\nDiagonal 1: ";
+	for (int i = 0, c = 0; i < R; i++, c++) {
+		if (i == c) {
+			cout << integers[i][c] << " ";
+		}
+	}
+	cout << "\nAnother way to print Diagonal 1: ";
+	for (int i = 0; i < C; i++) {
+		cout << integers[i][i] << " ";
+	}
+	cout << "\nDiagonal 2: ";
+	for (int i = 0; i < R; i++) {
+			cout << integers[i][R-i-1] << " ";							// One dimention counts up, other counts down
+	}																	// 0,3
+																		// 1,2
+																		// 2,1
+																		// 3,0
+																		// Loops goes as follows
+																		// i = 0; R < 4; i++
+																		// R i 1
+																		// 4-0-1 = 3
+																		// 4-1-1 = 2
+																		// 4-2-1 = 1
+																		// 4-3-1 = 0
+	// Hint: Recall that loops can have multiple initializations, conditions and
+	// increment changes such as :
+	// for(int i=5, j=2; i>=0 && j<10; i--, j++) { loop code; }
 
-
-
-
+	
 	cout << endl;
 	return 0;
 }
+*/
