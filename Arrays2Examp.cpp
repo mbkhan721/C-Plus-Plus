@@ -11,6 +11,23 @@ void passArray_2(int* z) {														// Again, when we send an array to a fun
 	cout << "Value of array array: " << z << "\n\n";							// Both functions we are using a pointer and not an array.
 }																				// Its a pointer to the first element of the array, and that's all 
 																				// we need to be able to access the arrays inside these functions.
+void print(int* p, int size) {		// WE NEED THE SIZE, SO WE KNOW WHERE TO STOP || AT WHAT POINT DO WE RUN OUT OF ELEMENTS IN THE ARRAY
+	for (int i = 0; i < size; i++) {
+		cout << p[i] << " ";													// Prints the value of every element in the array
+		cout << &p[i] << "\n";													// Prints the memory address of every element in the array
+	}
+}
+
+int getIndex(int* a, int size, int value) {										// array, array size, the value we are looing for
+	for (int i = 0; i < size; i++) {
+		if (a[i] == value) {													// If current value is the value 
+			return i;															// return index
+		}
+	}
+	return -1;																	// If value not found, return -1
+}																				// Why -1? because our array does not contain -1 index
+																				// So if it returns -1, we'll know our value is not present in the array
+
 int main() {
 
 	// ----------------------------- POINTER REVIEW
@@ -151,13 +168,35 @@ int main() {
 
 
 
-	int array[10] = { 1, 2, 3, 4, 5, 6,7, 8, 9, 10 };
+	int array[10] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 	cout << "\n\nThis array is being used in a function.\n";
 	cout << "Size of array array: " << sizeof(array) << "\n";
-	cout << "Value(memory address) of array array: " << array << "\n\n";
+	cout << "Memory address of array array: " << array << "\n\n";
 
 	passArray_1(array);									// Calling the first function
-	passArray_2(array);										// Calling the 2nd function
+	passArray_2(array);									// Calling the 2nd function
+
+
+
+	// ----------------------------- ARRAY FUNCTIONS: PRINT
+
+	cout << "\nPrinting value and memory address of the array:" << endl;
+	print(array, 10);									// Calling the 3rd function
+
+	// WHEN WE SEND AN ARRAY TO A FUNCTION, WE'RE SENDING A POINTER TO THE FIRST ELEMENT OF THE ARRAY
+	// THAT'S ALL WE NEED TO BE ABLE TO ACCESS THE REST OF THE ARRAY.
+
+
+
+	// ----------------------------- ARRAY FUNCTIONS: GETINDEX
+
+	// getIndex() function: Given a value, it returns to you where that value is 
+	// located in the array
+	// Linear Search: It checks every element in the array to find what we're looking for.
+
+	cout << "\n\nLooking for number 4 in the array using a getIndex function.\n";
+	cout << "4 is located at index: " << getIndex(array, 10, 4) << "\n";
+
 
 
 
