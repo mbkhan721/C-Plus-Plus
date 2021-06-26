@@ -143,6 +143,7 @@
     <ClCompile Include="ArraysExamp.cpp" />
     <ClCompile Include="ArraysHW.cpp" />
     <ClCompile Include="ArraysPractice.cpp" />
+    <ClCompile Include="ArraysTestEx.cpp" />
     <ClCompile Include="BranchingAlg05.cpp" />
     <ClCompile Include="BranchingPrac05.cpp" />
     <ClCompile Include="ExprePractice04.cpp" />
