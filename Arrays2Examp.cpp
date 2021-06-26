@@ -25,9 +25,37 @@ int getIndex(int* a, int size, int value) {										// array, array size, the v
 		}
 	}
 	return -1;																	// If value not found, return -1
-}																				// Why -1? because our array does not contain -1 index
+}																				// Why -1? because there's no such thing as a negative index in an array in c++, INDEX MUST ALWAY BE POSITIVE
 																				// So if it returns -1, we'll know our value is not present in the array
 
+
+void printArr(int a[][5], int d1, int d2) {										// First dimention can be left blank, 2nd dimention Must be specified as the
+	for (int i = 0; i < d1; i++) {												// original array is. Additionally, I need to know the size of both dimensions
+		for (int j = 0; j < d2; j++) {											// D1, D2 are sizes of the 1st and 2nd dimensions - 2 and 5
+			cout << a[i][j] << " ";
+		}
+		cout << "\n";
+	}
+}
+
+void init(int m[][3], int d1, int d2) {											// Again, if the array is more than 1 dimension, you MUST specify the size
+	int n = 1;																	// of the 2nd dimension and any other dimensions afterwards.
+	for (int i = 0; i < d1; i++) {
+		for (int j = 0; j < d2; j++) {
+			m[i][j] = n++;														// This is a store operation, we are storing the values into the location of
+		}																		// the array.
+	}
+}
+void printMatrix(int m[][3], int d1, int d2) {
+	int n = 1;
+	for (int i = 0; i < d1; i++) {
+		for (int j = 0; j < d2; j++) {
+			cout << m[i][j] << " ";
+		}
+		cout << "\n";
+	}
+}
+/*
 int main() {
 
 	// ----------------------------- POINTER REVIEW
@@ -175,6 +203,7 @@ int main() {
 
 	passArray_1(array);									// Calling the first function
 	passArray_2(array);									// Calling the 2nd function
+	// No brackets, just name of the array
 
 
 
@@ -194,19 +223,29 @@ int main() {
 	// located in the array
 	// Linear Search: It checks every element in the array to find what we're looking for.
 
-	cout << "\n\nLooking for number 4 in the array using a getIndex function.\n";
-	cout << "4 is located at index: " << getIndex(array, 10, 4) << "\n";
+	cout << "\n\nLooking for number 4 in the array using a pointer in getIndex function.\n";
+	cout << "4 is located at index: " << getIndex(array, 10, 4) << "\n\n";			// no brackets, just name of the array, size, and the value we're looking for
+	cout << "Looking for number 21 in the array using a getIndex function.\nShould return -1 because 21 doesn't exists in the array.\n";
+	cout << "21 is located at index: " << getIndex(array, 10, 21) << "\n";
 
 
 
+	// ----------------------------- 2D ARRAY FUNCTION PARAMETERS
 
+	// For 2D arrays, you MUST specify the value of each dimension after the 1st dimention
+	// Specify the size of each dimention as a separate parameters
+	cout << "\n2 Dimension Array.\n";
 
+	int arr[2][5] = { {10,20,30,40,50}, {60,70,80,90,100} };
+	printArr(arr, 2, 5);
 
-
-
-
+	cout << "\n\n2nd 2 Dimension Array.\n";
+	int matrix[3][3];							// Initialized in init function
+	init(matrix, 3, 3);
+	printMatrix(matrix, 3, 3);
 
 
 	cout << endl;
 	return 0;
 }
+*/
