@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-
+/*
 void passArray_1(int a[]) {														// Parameter a is not an array, it is an integer pointer
 	cout << "\nFunction 1 - Size of array array: " << sizeof(a) << "\n";		// because it has a size of 4 unlike the array itself which
 	cout << "Value of array array: " << a << "\n";								// is 40 bytes. However, the memory address is the same.
@@ -55,7 +55,7 @@ void printMatrix(int m[][3], int d1, int d2) {
 		cout << "\n";
 	}
 }
-/*
+
 int main() {
 
 	// ----------------------------- POINTER REVIEW
