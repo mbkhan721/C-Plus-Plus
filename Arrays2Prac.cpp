@@ -103,6 +103,44 @@ void printFloatArr(double* a, const int& size) {
 	}
 }
 
+// --------------------------------------------- 6
+
+void initA6(int* a, const int& size) {
+	for (int i = 0; i < size; i++) {
+		//a[i] = rand() % 90 + 10;
+		a[i] = rand() % 20 + 10;
+	}
+}
+
+void printA6(const int* a, const int& size) {
+	for (int i = 0; i < size; i++) {
+		cout << a[i] << " ";
+	}
+}
+
+int getLastIndex(int* a, int& size, int value) {
+	for (int i = size; i >= 0; i--) {
+		if (a[i] == value) {
+			return i;
+		}
+	}
+	return -1;
+}
+
+void deleteAt(int* a, int size, int index) {
+	if (size > 0) {
+
+	}
+	for (int i = size; i > index; --i) {
+		if (a[i] == index) {
+			a[i] - a[i - 1];
+		}
+
+		--size;
+	}
+}
+
+
 
 
 int main() {
@@ -149,7 +187,7 @@ int main() {
 
 
 	// --------------------------------------------- 5
-	cout << "\n\n5. \n";
+	cout << "\n\n5. Copying, Reversing, and Printing array:\n";
 
 	const int SIZE = 10;				// Size
 	double arrA[SIZE];					// Array 1
@@ -158,10 +196,28 @@ int main() {
 	initFloatArr(arrA, SIZE);			// Initialize Array 1 with rand val
 	copy(arrA, arrB, SIZE);				// copy arrA into arrB -- SENDING BOTH ARRAYS AS THE ARGUMENTS
 
-	cout << "Array 1: ";
-	reverse(arrA, SIZE);				// Print arrA
+	cout << "reverse() Array 1: ";
+	reverse(arrA, SIZE);				// Print arrA Reversed
 	cout << "\nArray 2: ";
-	printFloatArr(arrB, SIZE);			// Print arrB
+	printFloatArr(arrB, SIZE);			// Print arrB Regular
+
+	cout << "\nreverseArray(): ";
+	reverseArray(arrA, SIZE);			// Calling the reverse function -- Method II to reverse
+	printFloatArr(arrA, SIZE);			// Printing the reverse function of arrA
+
+
+	// --------------------------------------------- 6
+	cout << "\n\n6. \n";
+
+	const int CAP = 10;
+	int actualSize = 5;
+	int a6[CAP];						// Declaring the array
+
+	initA6(a6, actualSize);				// Initializing the array
+	printA6(a6, actualSize);			// Printing the array
+
+	cout << "\nLooking for 14: " << getLastIndex(a6, actualSize, 14);
+
 
 
 
