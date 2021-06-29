@@ -1,7 +1,7 @@
 #include<iostream>
 #include<time.h>
 using namespace std;
-
+/*
 // --------------------------------------------- 1
 
 void init(int* a, const int &capacity) {				// Accepts the array by pointer and capacity is constant coz we're not going to change the size
@@ -228,3 +228,4 @@ int main() {
 	cout << endl;
 	return 0;
 }
+*/
