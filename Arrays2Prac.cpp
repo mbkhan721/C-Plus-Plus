@@ -1,4 +1,5 @@
 #include<iostream>
+#include<time.h>
 using namespace std;
 
 // --------------------------------------------- 1
@@ -48,6 +49,59 @@ void print2DArr(int a[][4], int D1, int D2) {			// The size of the second dimens
 
 // --------------------------------------------- 4
 
+void initRand2DArr(int r[][4], int d1, int d2) {
+	for (int i = 0; i < d1; i++) {
+		for (int j = 0; j < d2; j++) {
+			r[i][j] = rand() % 90 + 10;
+		}
+	}
+}
+
+double average(int a[][4], double d1, double d2) {		// Can use int for d1 and d2
+	double sum = 0;
+	for (int i = 0; i < d1; i++) {
+		for (int j = 0; j < d2; j++) {
+			sum += a[i][j];				// ADDING ALL THE VALUES TOGETHER.
+		}								// As we iterate, we add every element in the array
+	}									// into the sum.
+	return sum / (d1 * d2);				// Divide the sum by the number of values to get the average.
+}
+
+// --------------------------------------------- 5
+
+void initFloatArr(double* a, const int& size) {
+	for (int i = 0; i < size; i++) {
+		a[i] = rand() % 900 + 100;
+	}
+}
+
+void copy(double *arr1, double *arr2, const int& size) {
+	for (int i = 0; i < size; i++) {
+		arr2[i] = arr1[i];
+	}
+}
+
+void reverse(double* a, const int& size) {						// Simple solution to reverse
+	for (int i = size - 1; i >= 0; i--) {
+		cout << a[i] << " ";
+	}
+}
+
+// reverse() function can also be written as follows
+void reverseArray(double* a, const int& size) {
+	for (int i = 0, j = size - 1; i < size / 2; i++, j--) {		// Fancy solution to reverse
+		float temp = a[i];
+		a[i] = a[j];
+		a[j] = temp;
+	}
+}
+
+
+void printFloatArr(double* a, const int& size) {
+	for (int i = 0; i < size; i++) {
+		cout << a[i] << " ";
+	}
+}
 
 
 
@@ -84,6 +138,30 @@ int main() {
 
 
 	// --------------------------------------------- 4
+	cout << "\n\n4. Random numbers with average of the array:\n";
+
+	int rand2DArr[D1][D2];				// Declaring a 2D array
+	srand(time(NULL));
+	initRand2DArr(rand2DArr, D1, D2);	// Initializing the array
+	print2DArr(rand2DArr, D1, D2);		// Printing the array
+
+	cout << "\nAverage = " << average(rand2DArr, D1, D2) << "\n";		// Printing the average
+
+
+	// --------------------------------------------- 5
+	cout << "\n\n5. \n";
+
+	const int SIZE = 10;				// Size
+	double arrA[SIZE];					// Array 1
+	double arrB[SIZE];					// Array 2
+
+	initFloatArr(arrA, SIZE);			// Initialize Array 1 with rand val
+	copy(arrA, arrB, SIZE);				// copy arrA into arrB -- SENDING BOTH ARRAYS AS THE ARGUMENTS
+
+	cout << "Array 1: ";
+	reverse(arrA, SIZE);				// Print arrA
+	cout << "\nArray 2: ";
+	printFloatArr(arrB, SIZE);			// Print arrB
 
 
 
