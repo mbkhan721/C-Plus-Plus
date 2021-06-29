@@ -118,26 +118,23 @@ void printA6(const int* a, const int& size) {
 	}
 }
 
-int getLastIndex(int* a, int& size, int value) {
-	for (int i = size; i >= 0; i--) {
-		if (a[i] == value) {
+int getLastIndex(int* a, const int& size, int value) {
+	for (int i = size - 1; i >= 0; i--) {				// Start at the end, count to 0, decrement by 1
+		if (a[i] == value) {							// If current value == to value we are looking for
 			return i;
-		}
+		}												// Returns index or -1
 	}
 	return -1;
 }
 
-void deleteAt(int* a, int size, int index) {
-	if (size > 0) {
-
-	}
-	for (int i = size; i > index; --i) {
-		if (a[i] == index) {
-			a[i] - a[i - 1];
-		}
-
-		--size;
-	}
+void deleteAt(int* a, int& size, int index) {			// Left Shift
+	if (index >= 0 && index < size) {					// We are deleting elements, starting at index
+		for (int i = index; i < size - 1; i++) {		// Start at index, counting up to size - 1
+				a[i] = a[i + 1];						// Current == next
+														// Unlike the deleteFirst function, this is the deleteAt
+		}												// We start at index and shift left by NEXT to CURRENT
+		--size;											// Finally, we decrement the size of the array
+	}	
 }
 
 
@@ -216,11 +213,18 @@ int main() {
 	initA6(a6, actualSize);				// Initializing the array
 	printA6(a6, actualSize);			// Printing the array
 
-	cout << "\nLooking for 14: " << getLastIndex(a6, actualSize, 14);
+	int ind;
+	cout << "\nSelect a value to delete: ";
+	cin >> ind;
 
+	int index = getLastIndex(a6, actualSize, ind);	// Returns index or -1
+	
+	if (index != -1) {
+		deleteAt(a6, actualSize, index);		// Deleting the index
+		printA6(a6, actualSize);			// Printing the array
+	}
 
-
-
+	
 	cout << endl;
 	return 0;
 }
