@@ -78,6 +78,23 @@ int toByte(int* a, int size) {				// Start out with 8
 
 // --------------------------------------------- 4
 
+void initD(int* a, const int& SIZE) {
+	for (int i = 0; i < SIZE; i++) {
+		a[i] = rand() % SIZE;
+	}
+}
+void deleteEvens(int* a, int& size) {				// Size must be PASS BY REFERENCE because it is updated
+	for (int i = 0; i < size; i++) {
+		if (a[i] % 2 == 0) {						// If current element is even
+			for (int j = i; j < size - 1; j++) {	// Shift the array to delete the element
+				a[j] = a[j + 1];					// Copy next to current
+			}
+			--size;									// Reduce size to reflect deletion
+			--i;									// Start again from the new current element
+		}											// If you dont bring back i by 1, we'll miss
+	}												// the next even number
+}
+
 
 int main() {
 
@@ -119,9 +136,17 @@ int main() {
 	cout << "\n\n4.\n";
 
 	const int Capacity = 100;		// Setting the capacity to 100
-	int size;						// Declaring size
-	cout << "Enter a size greater than 10 and less than 100:\n";
+	int d[Capacity];				// Declaring array
+
+	int size =0;						// Declaring size
+	cout << "Enter a size greater than 10 and less than 100: ";
 	cin >> size;
+
+	initD(d, size);					// Calling func to initialize
+	print(d, size);					// Print the array
+	
+	deleteEvens(d, size);			// Calling func to delete evens
+	print(d, size);					// Print the array
 
 
 
