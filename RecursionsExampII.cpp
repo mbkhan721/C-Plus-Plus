@@ -1,7 +1,7 @@
 #include<iostream>
 #include<string>
 using namespace std;
-
+/*
 void printDigits(int n);
 int countDigits(int n);
 int factorial(int n);

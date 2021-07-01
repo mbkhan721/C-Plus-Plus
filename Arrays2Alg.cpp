@@ -49,11 +49,34 @@ void initC(int* a, const int& SIZE) {
 		a[i] = rand() % 2;
 	}
 }
-int toByte(int* a, const int& SIZE) {
-	if (SIZE == 1) {
-		return;
+int toByte(int* a, int size) {				// Start out with 8
+	if (size == 1) {						// Base case: When size is 1,
+		return a[size -1];					// Return a[0]
 	}
-}
+	return toByte(a, size -1) * 10 + a[size - 1];	// Everytime we recurse, we reduce the size
+}													// until size == 1
+
+// Tracing the toByte() function above
+//
+//
+//	toByte(a, 8)
+//		toByte(a, 7)
+//			toByte(a, 6)
+//				toByte(a, 5)
+//					toByte(a, 4)
+//						toByte(a, 3)
+//							toByte(a, 2)
+//								toByte(a, 1)	returns a[0]
+//							toByte(a, 2)	returns a[0] * 10 + a[1]	LEFT SHIFT and ADD 1
+//						toByte(a, 3)	returns (a[0] * 10 + a[1]) * 10 + a[2]	RETURNS ALL OF WHAT WE DID IN PREVIOUS RETURN, LEFT SHIFTED PLUS A2
+//					toByte(a, 4)	ALL OF WHAT WE DID IN PREVIOUS RETURN, LEFT SHIFTED PLUS A3
+//				toByte(a, 5)	ALL OF WHAT WE DID IN PREVIOUS RETURN, LEFT SHIFTED PLUS A4
+//			toByte(a, 6)	ALL OF WHAT WE DID IN PREVIOUS RETURN, LEFT SHIFTED PLUS A5
+//		toByte(a, 7)	ALL OF WHAT WE DID IN PREVIOUS RETURN, LEFT SHIFTED PLUS A6
+//	toByte(a, 8)	ALL OF WHAT WE DID IN PREVIOUS RETURN, LEFT SHIFTED PLUS A7
+
+
+// --------------------------------------------- 4
 
 
 int main() {
@@ -80,13 +103,28 @@ int main() {
 
 
 	// --------------------------------------------- 3
-	cout << "\n3.\n";
+	cout << "\n3. Recursive function to turn array into a number:\n";
 
 	const int CAP = 8;
 	int c[CAP];						// Declaring array
 	
 	initC(c, CAP);					// Calling func to initialize
+	cout << "Array: \n";
 	print(c, CAP);					// Print the array
+	
+	cout << "\nNumber: \n" << toByte(c, CAP);	// Calling the recursive function
+
+
+	// --------------------------------------------- 4
+	cout << "\n\n4.\n";
+
+	const int Capacity = 100;		// Setting the capacity to 100
+	int size;						// Declaring size
+	cout << "Enter a size greater than 10 and less than 100:\n";
+	cin >> size;
+
+
+
 
 
 	cout << endl;
