@@ -1,7 +1,7 @@
 #include<iostream>
 #include<time.h>
 using namespace std;
-
+/*
 // --------------------------------------------- 1
 void init(int* a, const int& SIZE) {
 	for (int i = 0; i < SIZE; i++) {
@@ -160,7 +160,7 @@ int main() {
 
 	const int Capacity = 100;		// Setting the capacity to 100
 	int d[Capacity];				// Declaring array
-	/*
+	
 	int size =0;						// Declaring size
 	cout << "Enter a size greater than 10 and less than 100: ";
 	cin >> size;
@@ -171,7 +171,7 @@ int main() {
 	deleteEvens(d, size);			// Calling func to delete evens
 	print(d, size);					// Print the array
 
-	*/
+	
 
 	// --------------------------------------------- 5
 	cout << "\n\n5.\n";
@@ -188,7 +188,7 @@ int main() {
 	print(e, size2);
 
 
-
 	cout << endl;
 	return 0;
 }
+*/

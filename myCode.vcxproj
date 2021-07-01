@@ -142,6 +142,7 @@
     <ClCompile Include="Arrays2Alg.cpp" />
     <ClCompile Include="Arrays2Examp.cpp" />
     <ClCompile Include="Arrays2Examp2.cpp" />
+    <ClCompile Include="Arrays2HW.cpp" />
     <ClCompile Include="Arrays2Prac.cpp" />
     <ClCompile Include="ArraysAlg.cpp" />
     <ClCompile Include="ArraysExamp.cpp" />
