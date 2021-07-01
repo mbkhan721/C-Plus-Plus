@@ -95,6 +95,29 @@ void deleteEvens(int* a, int& size) {				// Size must be PASS BY REFERENCE becau
 	}												// the next even number
 }
 
+// --------------------------------------------- 5
+
+void insertSorted(int* a, const int& CAPACITY, int& size, int value) {
+	if (size < CAPACITY) {							// Do we have room to store the value?
+		int index = 0;
+		for (int i = 0; i < size; i++) {
+			if (a[i] > value) {						// Is the current value in the array larger 
+				break;								// than the value we want to insert?
+			}										// If so, exit the loop
+			++index;
+		}
+		for (int i = size; i > index; --i) {		// RIGHT SHIFT the array to make room
+			a[i] = a[i - 1];						// Current = previous
+		}
+		a[index] = value;							// Insert the element
+	}
+	++size;											// Update the array size
+}
+
+
+			// We start at the end
+			// Everytime it loops to look if the index is greater than the current value,
+			// the index is incremented.
 
 int main() {
 
@@ -131,13 +154,13 @@ int main() {
 	
 	cout << "\nNumber: \n" << toByte(c, CAP);	// Calling the recursive function
 
-
+	
 	// --------------------------------------------- 4
-	cout << "\n\n4.\n";
+	cout << "\n\n4. Removing even numbers from the array:\n";
 
 	const int Capacity = 100;		// Setting the capacity to 100
 	int d[Capacity];				// Declaring array
-
+	/*
 	int size =0;						// Declaring size
 	cout << "Enter a size greater than 10 and less than 100: ";
 	cin >> size;
@@ -148,7 +171,21 @@ int main() {
 	deleteEvens(d, size);			// Calling func to delete evens
 	print(d, size);					// Print the array
 
+	*/
 
+	// --------------------------------------------- 5
+	cout << "\n\n5.\n";
+
+	int e[Capacity] = { 10, 20, 30, 40, 50, 60, 70, 80, 90, 100 };
+	int size2 = 10;
+
+	print(e, size2);
+	insertSorted(e, Capacity, size2, 25);
+	insertSorted(e, Capacity, size2, 5);
+	insertSorted(e, Capacity, size2, 55);
+	insertSorted(e, Capacity, size2, 150);
+	cout << "\nValues added:\n";
+	print(e, size2);
 
 
 
