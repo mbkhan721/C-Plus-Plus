@@ -1,9 +1,9 @@
 #include<iostream>
 using namespace std;
-
+/*
 int loopPrac() {
 	cout << endl;
-	/*
+
 	cout << "Loop Practice 1)\nDo While:\n"; // 1. Do while
 	int x;
 
@@ -142,7 +142,8 @@ int loopPrac() {
 			cout << i << " ";
 		}
 	}
-	*/
+
 	cout << endl;
 	return 0;
 }
+*/
