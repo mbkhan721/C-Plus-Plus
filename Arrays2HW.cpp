@@ -32,6 +32,29 @@ void print(int* a, const int& SIZE) {
 	}
 }
 
+// ------------------------------- 3
+
+bool hasValue(int* a, const int& SIZE, int n) {
+	for (int i = 0; i < SIZE; i++) {
+		if (a[i] == n) {
+			return true;
+		}
+	}
+	return false;
+}
+
+void randArray(int* a, int & size, const int& CAP) {
+	a[0] = rand() % 10;							// store a random value at a[0]
+	++size;										// increment size since we added the first value
+	for (int i = 1; i < CAP; i++) {				// iterate from second value to end
+		a[i] = rand() % 10;						// generate a new random value for current i
+		while ( hasValue(a, size, a[i]) ) {		// check if the new random value is a duplicate of a previous value
+			a[i] = rand() % 10;					// if so, create a new one and check this one
+		}
+		++size;									// if unique value was created, increment size and move to next value
+	}
+}
+
 
 
 int main() {
@@ -47,7 +70,7 @@ int main() {
 
 
 	// ------------------------------- 2
-	cout << "\n\n2.\n\n";
+	cout << "\n\n2. Randomly modifies each element by up to +/- 5.\n\n";
 
 	srand(time(NULL));
 	const int SIZE = 5;
@@ -61,9 +84,15 @@ int main() {
 
 
 	// ------------------------------- 3
+	cout << "\n\n3.\n\n";
 
+	const int CAP = 10;					// potential number of elements in the array (10 integers)
+	int b[CAP];							// partially filled array
+	int actualSize = 0;					// number of values is 0 because array is currently empty
 
-
+	randArray(b, actualSize, CAP);
+	print(b, actualSize);
+	
 
 
 
