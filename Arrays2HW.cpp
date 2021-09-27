@@ -1,7 +1,7 @@
 #include<iostream>
 #include<time.h>
 using namespace std;
-
+/*
 // ------------------------------- 1
 
 void chessBoard(int* a, const int& SIZE) {
@@ -100,3 +100,4 @@ int main() {
 	cout << endl;
 	return 0;
 }
+*/

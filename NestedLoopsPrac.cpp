@@ -1,9 +1,9 @@
 #include<iostream>
 using namespace std;
 
-int nlp() {
+int main() {
 	cout << endl;
-	/*
+	
 	// square 
 	const int DIM = 9;
 	for (int r = 1; r <= DIM; ++r) {
@@ -48,7 +48,7 @@ int nlp() {
 		}
 		cout << "\n";
 	}
-	
+	/*
 	// 1.
 	cout << "\n1.\n";
 	const int DIM = 9;
@@ -63,7 +63,7 @@ int nlp() {
 		}
 		cout << endl;
 	}
-	
+	*/
 	// 2.
 	cout << "\n2.\n";
 	for (int r = 1; r <= 7; ++r) {
@@ -153,7 +153,7 @@ int nlp() {
 		}
 		cout << endl;
 	}
-	*/
+	
 
 	cout << endl;
 	return 0;
